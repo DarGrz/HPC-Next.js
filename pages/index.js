@@ -2,6 +2,7 @@ import Head from "next/head";
 import { MongoClient } from "mongodb";
 import SelectPumps from "../components/pompy/SelectPump";
 import styles from "../styles/Home.module.css";
+import Baner from "../components/layout/Baner";
 
 function Home(props) {
   return (
@@ -11,6 +12,7 @@ function Home(props) {
         <meta name="description" content="Compare Heat Pumps" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Baner />
       <SelectPumps products={props.pumps} />
     </div>
   );

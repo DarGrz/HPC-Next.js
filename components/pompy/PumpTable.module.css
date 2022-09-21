@@ -10,12 +10,19 @@
   text-align: center;
 }
 
-.pumpTable img {
-  height: 400px;
+.pumpImages img {
+  height: 300px;
   object-fit: cover;
-  padding: 5px;
+  padding: 25px;
+  margin: 25px;
   width: 100%;
-  overflow: hidden;
+}
+
+.headerTableText th {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 /* .image {

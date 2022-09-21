@@ -1,12 +1,13 @@
 import React from "react";
 import Image from "next/image";
+import classes from "./PumpTable.module.css";
 
 const PumpTable = (props) => {
   return (
     <>
       <tr>
         <th></th>
-        <td>
+        <td className={classes.pumpImages}>
           <img src={props.pump.image} alt={props.pump.brand} />
         </td>
         <td>
@@ -20,7 +21,7 @@ const PumpTable = (props) => {
           )}
         </td>
       </tr>
-      <tr>
+      <tr className={classes.headerTableText}>
         <th colSpan={3}>Specification</th>
       </tr>
       <tr>
@@ -51,10 +52,14 @@ const PumpTable = (props) => {
       <tr>
         <th>Dimensions</th>
         <td>
-          {props.pump.width}x{props.pump.height}x{props.pump.depth}{" "}
+          {props.pump.width}x{props.pump.height}x{props.pump.depth}
         </td>
         <td>
-          {props.pumpB.width}x{props.pumpB.height}x{props.pumpB.depth}{" "}
+          {props.pumpB && (
+            <div>
+              {props.pumpB.width}x{props.pumpB.height}x{props.pumpB.depth}
+            </div>
+          )}
         </td>
       </tr>
       <tr>
@@ -68,8 +73,13 @@ const PumpTable = (props) => {
           {props.pump.phase}F | {props.pump.voltage}(V) | {props.pump.cycle}(Hz)
         </td>
         <td>
-          {props.pumpB.phase}F | {props.pumpB.voltage}(V) | {props.pumpB.cycle}
-          (Hz)
+          {props.pumpB && (
+            <div>
+              {props.pumpB.phase}F | {props.pumpB.voltage}(V) |{" "}
+              {props.pumpB.cycle}
+              (Hz)
+            </div>
+          )}
         </td>
       </tr>
       <tr>
