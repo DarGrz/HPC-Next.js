@@ -2,7 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-}
+  images: {
+    domains: ["www.hojero.pl", "fundacja-sprzymierzeni.pl", "8.allegroimg.com"],
+  },
+};
 
-
-module.exports = nextConfig
+module.exports = nextConfig;
