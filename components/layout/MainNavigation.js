@@ -11,7 +11,13 @@ const MainNavigation = () => {
     <Navbar bg="dark" variant="dark" expand="lg" className={classes.navbar}>
       <Container className={classes.container}>
         <Navbar.Brand href="/" className={classes.brand}>
-          <Image src="/logo.png" width="60" height="60" layout="fixed" />
+          <Image
+            src="/logo.png"
+            width="60"
+            height="60"
+            layout="fixed"
+            alt="logo"
+          />
           <span>HPC</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
