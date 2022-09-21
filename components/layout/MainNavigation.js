@@ -15,6 +15,9 @@ const MainNavigation = () => {
             <Link href="/about">About</Link>
           </li>
           <li>
+            <Link href="/new-pump">Add Pump</Link>
+          </li>
+          <li>
             <Link href="store">Store</Link>
           </li>
         </ul>

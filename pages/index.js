@@ -1,8 +1,21 @@
 import Head from "next/head";
-import SelectPump from "../components/pompy/SelectPump";
+import SelectPumps from "../components/pompy/SelectPump";
 import styles from "../styles/Home.module.css";
 
-function Home() {
+const DUMMY_PRODUCTS = [
+  {
+    id: "m1",
+    producent: "Mitsu",
+    pn: "kdfmkdf3434",
+  },
+  {
+    id: "mw",
+    producent: "Panas",
+    pn: "34ffff3434",
+  },
+];
+
+function Home(props) {
   return (
     <div className={styles.container}>
       <Head>
@@ -10,9 +23,17 @@ function Home() {
         <meta name="description" content="Compare Heat Pumps" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <SelectPump />
+      <SelectPumps products={props.products} />
     </div>
   );
+}
+
+export async function getStaticProps() {
+  return {
+    props: {
+      products: DUMMY_PRODUCTS,
+    },
+  };
 }
 
 export default Home;
