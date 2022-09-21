@@ -50,9 +50,10 @@ const AddPumpForm = (props) => {
     const enteredRefrigerant = refrigerantInputRef.current.value;
     const enteredRefrigerantQuantity =
       refrigerantQuantityInputRef.current.value;
-    const enteredHeating = heatingInputRefInputRef.current.value;
+    const enteredHeating = heatingInputRef.current.value;
     const enteredDwh = dwhInputRef.current.value;
     const enteredCooling = coolingInputRef.current.value;
+    const enteredDescription = descriptionInputRef.current.value;
 
     const pumpData = {
       brand: enteredBrand,
@@ -62,7 +63,7 @@ const AddPumpForm = (props) => {
       power: enteredPower,
       type: enteredType,
       width: enteredWidth,
-      heigth: enteredHeight,
+      height: enteredHeight,
       depth: enteredDepth,
       weight: enteredWeight,
       phase: enteredPhase,
@@ -205,7 +206,7 @@ const AddPumpForm = (props) => {
               <label>Noise level</label>
               <div style={{ display: "flex", justifyContent: "space-between" }}>
                 <input
-                  type="number"
+                  type="text"
                   required
                   id="noiseLevelHeting"
                   ref={noiseLevelHetingInputRef}
@@ -213,7 +214,7 @@ const AddPumpForm = (props) => {
                   style={{ width: "45%" }}
                 />
                 <input
-                  type="number"
+                  type="text"
                   required
                   id="coolingNoiseLevel"
                   ref={coolingNoiseLevelInputRef}
@@ -234,7 +235,7 @@ const AddPumpForm = (props) => {
                   style={{ width: "45%" }}
                 />
                 <input
-                  type="number"
+                  type="text"
                   required
                   id="quantity"
                   placeholder="Quantity (kg)"
@@ -272,15 +273,6 @@ const AddPumpForm = (props) => {
                 />
               </div>
             </div>
-            <div className={classes.control}>
-              <label htmlFor="power">Power in kW</label>
-              <input type="number" required id="power" ref={powerInputRef} />
-            </div>
-            <div className={classes.control}>
-              <label htmlFor="power">Power in kW</label>
-              <input type="number" required id="power" ref={powerInputRef} />
-            </div>
-
             <div className={classes.actions}>
               <button>Add Pump</button>
             </div>
