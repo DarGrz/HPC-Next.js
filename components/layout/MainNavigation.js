@@ -1,6 +1,6 @@
 import * as React from "react";
 import classes from "./MainNavigation.module.css";
-import Image from "next/Image";
+import Image from "next/image";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
