@@ -29,10 +29,11 @@ export async function getStaticProps() {
   return {
     props: {
       pumps: pumps.map((p) => ({
-        producent: p.producent,
+        brand: p.brand,
         model: p.model,
         image: p.image,
         power: p.power,
+        type: p.type,
         description: p.description,
         id: p._id.toString(),
       })),

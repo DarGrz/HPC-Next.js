@@ -1,0 +1,19 @@
+.pumpTable th {
+  width: 20%;
+}
+
+.pumpTable td {
+  width: 40%;
+}
+
+.pumpTable td {
+  text-align: center;
+}
+
+.pumpTable img {
+  height: 400px;
+  object-fit: cover;
+  padding: 5px;
+  width: 100%;
+  overflow: hidden;
+}

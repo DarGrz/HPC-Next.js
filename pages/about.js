@@ -1,7 +1,8 @@
 import React from "react";
+import Container from "react-bootstrap/Container";
 
 const about = () => {
-  return <div>about</div>;
+  return <Container>About</Container>;
 };
 
 export default about;
