@@ -1,7 +1,9 @@
+import { useRouter } from "next/router";
 import React from "react";
 import AddPumpForm from "../../components/pompy/AddPumpForm";
 
 const AddPumpPage = () => {
+  const router = useRouter();
   async function addPumpHandler(enteredPumpData) {
     const response = await fetch("/api/new-pump", {
       method: "POST",
@@ -10,6 +12,8 @@ const AddPumpPage = () => {
         "Content-Type": "application/json",
       },
     });
+    const data = await response.json();
+    router.push("/");
   }
 
   return <AddPumpForm onAddPump={addPumpHandler} />;
