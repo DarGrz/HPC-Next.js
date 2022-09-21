@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import classes from "./PumpTable.module.css";
 
 const PumpTable = (props) => {
   return (
@@ -8,31 +7,16 @@ const PumpTable = (props) => {
       <tr>
         <th></th>
         <td>
-          <div className={classes.image}>
-            <Image
-              src={props.pump.image}
-              layout="fill"
-              alt={props.pump.brand}
-            />
-          </div>
+          <img src={props.pump.image} alt={props.pump.brand} />
         </td>
         <td>
           {props.pumpB ? (
-            <div className={classes.image}>
-              <Image
-                src={props.pumpB.image}
-                layout="fill"
-                alt={props.pumpB.brand}
-              />
-            </div>
+            <img src={props.pumpB.image} alt={props.pumpB.brand} />
           ) : (
-            <div className={classes.image}>
-              <Image
-                src="https://fundacja-sprzymierzeni.pl/wp-content/uploads/2021/04/no-image-1.jpg"
-                layout="fill"
-                alt="no image"
-              />
-            </div>
+            <img
+              src="https://fundacja-sprzymierzeni.pl/wp-content/uploads/2021/04/no-image-1.jpg"
+              alt="no image"
+            />
           )}
         </td>
       </tr>
