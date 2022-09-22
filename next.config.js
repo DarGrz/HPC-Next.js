@@ -9,6 +9,7 @@ const nextConfig = {
       "8.allegroimg.com",
       "img.freepik.com",
       "app.zymetric.pl",
+      "www.technika-grzewcza-sklep.pl",
     ],
   },
 };

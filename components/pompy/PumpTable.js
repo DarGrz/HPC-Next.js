@@ -4,6 +4,14 @@ import SpecificationElement from "../ui/SpecificationElement";
 import ImagesRow from "../ui/ImagesRow";
 
 const PumpTable = (props) => {
+  if (props.pump.power > props.pumpB.power) {
+    console.log("Pomp a is stronger");
+  } else if (props.pump.power < props.pumpB.power) {
+    console.log("Pomp b is stronger");
+  } else {
+    console.log("pumps are equal");
+  }
+
   return (
     <>
       <Container className="w-100">
