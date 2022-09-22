@@ -5,25 +5,25 @@ import SpecificationElement from "../ui/SpecificationElement";
 const PumpTable = (props) => {
   return (
     <>
-      <Container className="p-0">
-        <div className="row align-items-center">
-          <div className="col">
+      <Container className="p-0 w-100">
+        <div className="row" style={{ margin: "auto" }}>
+          <div className="col d-flex justify-content-center p-0">
             <img
-              className="w-100"
+              style={{ objectFit: "cover", width: "70%", padding: "0px" }}
+              className=""
               src={props.pump.image}
-              alt={props.pump.brand}
             />
           </div>
 
-          <div className="col">
+          <div className="col d-flex justify-content-center p-0">
             <img
-              className="w-100"
+              style={{ objectFit: "cover", width: "70%" }}
+              className=""
               src={props.pumpB.image}
-              alt={props.pumpB.brand}
             />
           </div>
         </div>
-        <div className="text-center  fw-bolder text-uppercase bg-dark text-light pt-2 pb-2 ">
+        <div className="text-center  fw-bolder text-uppercase bg-dark text-light pt-2 pb-2">
           Specification
         </div>
         <SpecificationElement
