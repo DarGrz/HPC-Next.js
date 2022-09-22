@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Container } from "react-bootstrap";
 import Select from "react-select";
 import PumpTable from "./PumpTable";
+import Baner from "../layout/Baner";
 
 const SelectPumps = (props) => {
   const [pump, setPump] = useState("");
@@ -22,6 +23,7 @@ const SelectPumps = (props) => {
 
   return (
     <>
+      <Baner />
       <Container>
         <div className="text-center mb-3 fw-bold text-uppercase">
           Compare heat pumps!

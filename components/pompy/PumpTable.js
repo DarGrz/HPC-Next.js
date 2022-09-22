@@ -2,16 +2,9 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import SpecificationElement from "../ui/SpecificationElement";
 import ImagesRow from "../ui/ImagesRow";
+import { BsFillArrowUpCircleFill } from "react-icons";
 
 const PumpTable = (props) => {
-  if (props.pump.power > props.pumpB.power) {
-    console.log("Pomp a is stronger");
-  } else if (props.pump.power < props.pumpB.power) {
-    console.log("Pomp b is stronger");
-  } else {
-    console.log("pumps are equal");
-  }
-
   return (
     <>
       <Container className="w-100">
@@ -38,6 +31,8 @@ const PumpTable = (props) => {
           name={"Power (kW)"}
           pump={props.pump.power}
           pumpB={props.pumpB.power}
+          arrow={props.pump.power}
+          arrowB={props.pump.power}
         />
         <SpecificationElement
           name={"Type"}

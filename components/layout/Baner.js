@@ -7,7 +7,7 @@ const banerImage =
 
 const Baner = () => {
   return (
-    <Container className="p-0">
+    <Container className="p-0 mb-3">
       <div
         style={{
           width: "100%",

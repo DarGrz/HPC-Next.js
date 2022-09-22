@@ -18,6 +18,8 @@ const ImagesRow = (props) => {
           objectFit="contain"
           src={props.pump}
           alt="pupmAImage"
+          placeholder="blur"
+          blurDataURL={props.pump}
         />
       </div>
 
@@ -28,6 +30,8 @@ const ImagesRow = (props) => {
           objectFit="contain"
           src="/vs.webp"
           alt="pupmAImage"
+          placeholder="blur"
+          blurDataURL="/vs.webp"
         />
       </div>
 
@@ -45,6 +49,8 @@ const ImagesRow = (props) => {
             objectFit="contain"
             src="https://img.freepik.com/free-vector/white-question-mark-background-minimal-style_1017-25235.jpg?w=1480&t=st=1663882412~exp=1663883012~hmac=ef98e41ddd4f2a2d4ef6f6f1ca0d6f575e1b0fc35e7ba9731578a59136c6f69a"
             alt="noPumpImage"
+            placeholder="blur"
+            blurDataURL="https://img.freepik.com/free-vector/white-question-mark-background-minimal-style_1017-25235.jpg?w=1480&t=st=1663882412~exp=1663883012~hmac=ef98e41ddd4f2a2d4ef6f6f1ca0d6f575e1b0fc35e7ba9731578a59136c6f69a"
           />
         ) : (
           <Image
@@ -52,6 +58,8 @@ const ImagesRow = (props) => {
             src={props.pumpB}
             objectFit="contain"
             alt="pupmBImage"
+            placeholder="blur"
+            blurDataURL={props.pumpB}
           />
         )}
       </div>
