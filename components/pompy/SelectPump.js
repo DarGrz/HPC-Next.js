@@ -23,6 +23,9 @@ const SelectPumps = (props) => {
   return (
     <>
       <Container>
+        <div className="text-center mb-3 fw-bold text-uppercase">
+          Compare heat pumps!
+        </div>
         <div className="row align-items-center col d-md-flex flex-column flex-lg-row  m-auto ">
           <div className="col">
             <Select
