@@ -1,11 +1,11 @@
 import React from "react";
-import classes from "./PumpTable.module.css";
 import { Container } from "react-bootstrap";
+import SpecificationElement from "../ui/SpecificationElement";
 
 const PumpTable = (props) => {
   return (
     <>
-      <Container className={classes.pumpTable_container}>
+      <Container className="p-0">
         <div className="row align-items-center">
           <div className="col">
             <img
@@ -26,57 +26,32 @@ const PumpTable = (props) => {
         <div className="text-center  fw-bolder text-uppercase bg-dark text-light pt-2 pb-2 ">
           Specification
         </div>
-        <div className="row mt-2 border-bottom">
-          <div className="col">{props.pump.brand}</div>
-          <div
-            className="col fw-light text-center "
-            style={{ fontSize: "14px" }}
-          >
-            Brand
-          </div>
-          <div className="col text-end">{props.pumpB.brand}</div>
-        </div>
-        <div className="row mt-2 border-bottom">
-          <div className="col">{props.pump.model}</div>
-          <div
-            className="col fw-light text-center"
-            style={{ fontSize: "14px" }}
-          >
-            Model
-          </div>
-          <div className="col text-end">{props.pumpB.model}</div>
-        </div>
-        <div className="row mt-2 border-bottom">
-          <div className="col ">{props.pump.serial}</div>
-          <div
-            className="col fw-light text-center"
-            style={{ fontSize: "14px" }}
-          >
-            Model number
-          </div>
-          <div className="col text-end">{props.pumpB.serial}</div>
-        </div>
-        <div className="row mt-2 border-bottom">
-          <div className="col ">{props.pump.power}</div>
-          <div
-            className="col fw-light text-center"
-            style={{ fontSize: "14px" }}
-          >
-            Power (kW)
-          </div>
-          <div className="col text-end">{props.pumpB.power}</div>
-        </div>
-        <div className="row mt-2 border-bottom">
-          <div className="col ">{props.pump.type}</div>
-          <div
-            className="col fw-light text-center"
-            style={{ fontSize: "14px" }}
-          >
-            Type
-          </div>
-          <div className="col text-end">{props.pumpB.type}</div>
-        </div>
-        <div className="row mt-2 border-bottom">
+        <SpecificationElement
+          name={"Brand"}
+          pump={props.pump.brand}
+          pumpB={props.pumpB.brand}
+        />
+        <SpecificationElement
+          name={"Model"}
+          pump={props.pump.model}
+          pumpB={props.pumpB.model}
+        />
+        <SpecificationElement
+          name={"Model number"}
+          pump={props.pump.serial}
+          pumpB={props.pumpB.serial}
+        />
+        <SpecificationElement
+          name={"Power (kW)"}
+          pump={props.pump.power}
+          pumpB={props.pumpB.power}
+        />
+        <SpecificationElement
+          name={"Type"}
+          pump={props.pump.type}
+          pumpB={props.pumpB.type}
+        />
+        <div className="row mt-2 border-bottom px-2">
           <div className="col ">
             {" "}
             {props.pump.width}x{props.pump.height}x{props.pump.depth}
@@ -92,17 +67,12 @@ const PumpTable = (props) => {
             {props.pumpB.width}x{props.pumpB.height}x{props.pumpB.depth}
           </div>
         </div>
-        <div className="row mt-2 border-bottom">
-          <div className="col ">{props.pump.weight}</div>
-          <div
-            className="col fw-light text-center"
-            style={{ fontSize: "14px" }}
-          >
-            Weight (kg)
-          </div>
-          <div className="col text-end">{props.pumpB.weight}</div>
-        </div>
-        <div className="row mt-2 border-bottom">
+        <SpecificationElement
+          name={"Weight"}
+          pump={props.pump.weight}
+          pumpB={props.pumpB.weight}
+        />
+        <div className="row mt-2 border-bottom px-2">
           <div className="col ">
             {props.pump.phase}F | {props.pump.voltage}(V) | {props.pump.cycle}
             (Hz)
@@ -118,6 +88,27 @@ const PumpTable = (props) => {
             {props.pumpB.cycle}(Hz)
           </div>
         </div>
+
+        <SpecificationElement
+          name={"Breaker"}
+          pump={props.pump.breaker}
+          pumpB={props.pumpB.breaker}
+        />
+        <SpecificationElement
+          name={"Refrigerant"}
+          pump={props.pump.refrigerant}
+          pumpB={props.pumpB.refrigerant}
+        />
+        <SpecificationElement
+          name={"Refrigerant quantity (kg)"}
+          pump={props.pump.refrigerantQuantity}
+          pumpB={props.pumpB.refrigerantQuantity}
+        />
+        <SpecificationElement
+          name={"Heating range"}
+          pump={props.pump.heatingRange}
+          pumpB={props.pumpB.heatingRange}
+        />
       </Container>
     </>
 

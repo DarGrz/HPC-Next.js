@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Container } from "react-bootstrap";
 import Select from "react-select";
 import PumpTable from "./PumpTable";
-import classes from "./SelectPump.module.css";
 
 const SelectPumps = (props) => {
   const [pump, setPump] = useState("");
@@ -42,7 +41,6 @@ const SelectPumps = (props) => {
           </div>
           <div className="col">
             <Select
-              className={classes.selector}
               onChange={(e) => {
                 onSelectPumpB(e);
               }}
