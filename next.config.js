@@ -8,6 +8,7 @@ const nextConfig = {
       "fundacja-sprzymierzeni.pl",
       "8.allegroimg.com",
       "img.freepik.com",
+      "app.zymetric.pl",
     ],
   },
 };
