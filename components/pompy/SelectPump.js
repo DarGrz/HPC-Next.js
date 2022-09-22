@@ -1,8 +1,6 @@
-import React, { useState, useEffect } from "react";
-
+import React, { useState } from "react";
+import { Container } from "react-bootstrap";
 import Select from "react-select";
-import Container from "react-bootstrap/Container";
-import Table from "react-bootstrap/Table";
 import PumpTable from "./PumpTable";
 import classes from "./SelectPump.module.css";
 
@@ -24,47 +22,43 @@ const SelectPumps = (props) => {
   const Products = props.products;
 
   return (
-    <Container>
-      <Table className={classes.table}>
-        <tbody>
-          <tr>
-            <th>Make a choice</th>
-            <td>
-              <Select
-                className={classes.selector}
-                onChange={(e) => {
-                  onSelectPump(e);
-                }}
-                instanceId="long-value-select"
-                placeholder="(A) Choose heat pump..."
-                getOptionLabel={(option) =>
-                  ` ${option.brand} ${option.model} ${option.power} kW`
-                }
-                getOptionValue={(option) => `${option.id}`}
-                options={Products}
-              />
-            </td>
-            <td>
-              <Select
-                className={classes.selector}
-                onChange={(e) => {
-                  onSelectPumpB(e);
-                }}
-                instanceId="long-value-select"
-                placeholder="(B) Choose heat pump..."
-                getOptionLabel={(option) =>
-                  ` ${option.brand} ${option.model} ${option.power} kW`
-                }
-                getOptionValue={(option) => `${option.id}`}
-                options={Products}
-              />
-            </td>
-          </tr>
-
-          {pump && <PumpTable pump={pump} pumpB={pumpB} />}
-        </tbody>
-      </Table>
-    </Container>
+    <>
+      <Container>
+        <div className="row align-items-center col d-md-flex flex-column flex-lg-row  m-auto ">
+          <div className="col">
+            <Select
+              className="mb-2 mb-lg-0"
+              onChange={(e) => {
+                onSelectPump(e);
+              }}
+              instanceId="long-value-select"
+              placeholder="(A) Choose heat pump..."
+              getOptionLabel={(option) =>
+                ` ${option.brand} ${option.model} ${option.power} kW`
+              }
+              getOptionValue={(option) => `${option.id}`}
+              options={Products}
+            />
+          </div>
+          <div className="col">
+            <Select
+              className={classes.selector}
+              onChange={(e) => {
+                onSelectPumpB(e);
+              }}
+              instanceId="long-value-select"
+              placeholder="(B) Choose heat pump..."
+              getOptionLabel={(option) =>
+                ` ${option.brand} ${option.model} ${option.power} kW`
+              }
+              getOptionValue={(option) => `${option.id}`}
+              options={Products}
+            />
+          </div>
+        </div>
+      </Container>
+      {pump && <PumpTable pump={pump} pumpB={pumpB} />}
+    </>
   );
 };
 

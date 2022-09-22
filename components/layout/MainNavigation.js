@@ -32,26 +32,6 @@ const MainNavigation = () => {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-
-    // <header className={classes.header}>
-    //   <div className={classes.logo}>
-    //     <Image src="/logo.png" width="50" height="50" layout="fixed" />{" "}
-    //     <span>HPC</span>
-    //   </div>
-    //   <nav>
-    //     <ul>
-    //       <li>
-    //         <Link href="/">Strona główna</Link>
-    //       </li>
-    //       <li>
-    //         <Link href="/about">O nas</Link>
-    //       </li>
-    //       <li>
-    //         <Link href="/new-pump">Dodaj pompę</Link>
-    //       </li>
-    //     </ul>
-    //   </nav>
-    // </header>
   );
 };
 
