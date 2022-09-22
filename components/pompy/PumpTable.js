@@ -15,12 +15,27 @@ const PumpTable = (props) => {
             />
           </div>
 
-          <div className="col d-flex justify-content-center p-0">
+          <div className="col-2 d-flex justify-content-center align-content-center m-auto p-0">
             <img
-              style={{ objectFit: "cover", width: "70%" }}
+              style={{
+                objectFit: "cover",
+                width: "100%",
+                maxHeight: "125px",
+                padding: "0px",
+              }}
               className=""
-              src={props.pumpB.image}
+              src="https://us.123rf.com/450wm/avectors/avectors1803/avectors180300017/97585764-vs-versus-litery-wektor-ikona-na-bia%C5%82ym-tle-vs-a-symbol-koncepcji-projektu-konfrontacji-lub-opozycji.jpg?ver=6"
             />
+          </div>
+
+          <div className="col d-flex justify-content-center p-0">
+            {props.pumB && (
+              <img
+                style={{ objectFit: "cover", width: "70%" }}
+                className=""
+                src={props.pumpB.image}
+              />
+            )}
           </div>
         </div>
         <div className="text-center  fw-bolder text-uppercase bg-dark text-light pt-2 pb-2">
@@ -63,12 +78,15 @@ const PumpTable = (props) => {
             Dimensions w/h/d (mm)
           </div>
           <div className="col text-end">
-            {" "}
-            {props.pumpB.width}x{props.pumpB.height}x{props.pumpB.depth}
+            {props.pumpB && (
+              <div>
+                {props.pumpB.width}x{props.pumpB.height}x{props.pumpB.depth}
+              </div>
+            )}
           </div>
         </div>
         <SpecificationElement
-          name={"Weight"}
+          name={"Weight (kg)"}
           pump={props.pump.weight}
           pumpB={props.pumpB.weight}
         />
@@ -84,8 +102,12 @@ const PumpTable = (props) => {
             Power supply f/V/Hz
           </div>
           <div className="col text-end">
-            {props.pumpB.phase}F | {props.pumpB.voltage}(V) |{" "}
-            {props.pumpB.cycle}(Hz)
+            {props.pumpB && (
+              <div>
+                {props.pumpB.phase}F | {props.pumpB.voltage}(V) |{" "}
+                {props.pumpB.cycle}(Hz)
+              </div>
+            )}
           </div>
         </div>
 
