@@ -29,7 +29,7 @@ const PumpTable = (props) => {
           </div>
 
           <div className="col d-flex justify-content-center p-0">
-            {props.pumB && (
+            {props.pumpB && (
               <img
                 style={{ objectFit: "cover", width: "70%" }}
                 className=""
