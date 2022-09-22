@@ -5,7 +5,7 @@ import SpecificationElement from "../ui/SpecificationElement";
 const PumpTable = (props) => {
   return (
     <>
-      <Container className="p-0 w-100">
+      <Container className="w-100">
         <div className="row" style={{ margin: "auto" }}>
           <div className="col d-flex justify-content-center p-0">
             <img
