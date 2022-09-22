@@ -25,9 +25,10 @@ const MainNavigation = () => {
           <Nav className="ms-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/about">About</Nav.Link>
-            <NavDropdown title="Admin" id="basic-nav-dropdown">
+            <Nav.Link href="/new-pump">Add new pump</Nav.Link>
+            {/* <NavDropdown title="Admin" id="basic-nav-dropdown">
               <NavDropdown.Item href="/new-pump">Add pump</NavDropdown.Item>
-            </NavDropdown>
+            </NavDropdown> */}
           </Nav>
         </Navbar.Collapse>
       </Container>
