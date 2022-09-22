@@ -3,7 +3,12 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ["www.hojero.pl", "fundacja-sprzymierzeni.pl", "8.allegroimg.com"],
+    domains: [
+      "www.hojero.pl",
+      "fundacja-sprzymierzeni.pl",
+      "8.allegroimg.com",
+      "img.freepik.com",
+    ],
   },
 };
 

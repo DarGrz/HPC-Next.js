@@ -1,43 +1,13 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import SpecificationElement from "../ui/SpecificationElement";
+import ImagesRow from "../ui/ImagesRow";
 
 const PumpTable = (props) => {
   return (
     <>
       <Container className="w-100">
-        <div className="row" style={{ margin: "auto" }}>
-          <div className="col d-flex justify-content-center p-0">
-            <img
-              style={{ objectFit: "cover", width: "70%", padding: "0px" }}
-              className=""
-              src={props.pump.image}
-            />
-          </div>
-
-          <div className="col-2 d-flex justify-content-center align-content-center m-auto p-0">
-            <img
-              style={{
-                objectFit: "cover",
-                width: "100%",
-                maxHeight: "125px",
-                padding: "0px",
-              }}
-              className=""
-              src="https://us.123rf.com/450wm/avectors/avectors1803/avectors180300017/97585764-vs-versus-litery-wektor-ikona-na-bia%C5%82ym-tle-vs-a-symbol-koncepcji-projektu-konfrontacji-lub-opozycji.jpg?ver=6"
-            />
-          </div>
-
-          <div className="col d-flex justify-content-center p-0">
-            {props.pumpB && (
-              <img
-                style={{ objectFit: "cover", width: "70%" }}
-                className=""
-                src={props.pumpB.image}
-              />
-            )}
-          </div>
-        </div>
+        <ImagesRow pump={props.pump.image} pumpB={props.pumpB.image} />
         <div className="text-center  fw-bolder text-uppercase bg-dark text-light pt-2 pb-2">
           Specification
         </div>
