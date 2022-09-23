@@ -1,5 +1,5 @@
 import React from "react";
-import { BsFillArrowUpCircleFill, BsJustify } from "react-icons/bs";
+import { BsFillArrowUpCircleFill } from "react-icons/bs";
 import { BsFillArrowDownCircleFill } from "react-icons/bs";
 
 // arrow icons colors
@@ -16,6 +16,8 @@ const SpecificationElement = (props) => {
 
   if (trigger > triggerB) {
     trigger = false;
+  } else {
+    trigger = true;
   }
 
   // Power arrow
