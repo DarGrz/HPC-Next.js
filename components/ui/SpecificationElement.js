@@ -20,7 +20,7 @@ const SpecificationElement = (props) => {
 
   // Power arrow
   const powerArrow =
-    props.arrow &&
+    props.arrowB &&
     (!trigger ? (
       <BsFillArrowUpCircleFill style={green} />
     ) : (
@@ -36,15 +36,15 @@ const SpecificationElement = (props) => {
 
   // Weight arrow
   const weightArrow =
-    props.weight &&
-    (trigger ? (
+    props.weightB &&
+    (!trigger ? (
       <BsFillArrowUpCircleFill style={green} />
     ) : (
       <BsFillArrowDownCircleFill style={red} />
     ));
   const weightArrowB =
     props.weightB &&
-    (!trigger ? (
+    (trigger ? (
       <BsFillArrowUpCircleFill style={green} />
     ) : (
       <BsFillArrowDownCircleFill style={red} />
