@@ -3,7 +3,7 @@ import ListGroup from "react-bootstrap/ListGroup";
 
 function ItemCard(props) {
   return (
-    <Card className="m-auto mt-5" style={{ width: "18rem" }}>
+    <Card className="m-auto" style={{ width: "18rem" }}>
       <Card.Img variant="top" src={props.image} />
       <Card.Body>
         <Card.Title>Card Title</Card.Title>

@@ -21,6 +21,8 @@ const Baner = () => {
           className="w-100 mt-3"
           src={banerImage}
           alt="baner"
+          placeholder="blur"
+          blurDataURL={banerImage}
         />
       </div>
     </Container>
