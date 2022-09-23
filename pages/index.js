@@ -2,6 +2,7 @@ import Head from "next/head";
 import { MongoClient } from "mongodb";
 import SelectPumps from "../components/pompy/SelectPump";
 import styles from "../styles/Home.module.css";
+import ItemCards from "../components/ui/ItemCards";
 
 function Home(props) {
   return (
@@ -12,6 +13,7 @@ function Home(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <SelectPumps products={props.pumps} />
+      <ItemCards />
     </div>
   );
 }
