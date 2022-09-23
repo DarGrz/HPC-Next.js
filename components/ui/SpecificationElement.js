@@ -53,8 +53,11 @@ const SpecificationElement = (props) => {
     ));
 
   return (
-    <div className="row  border-bottom px-2 ">
-      <div className="col" style={{ display: "flex", alignItems: "center" }}>
+    <div className="row  border-bottom px-2 m-auto ">
+      <div
+        className="col m-auto"
+        style={{ display: "flex", alignItems: "center" }}
+      >
         {props.pump}{" "}
         <div
           style={{

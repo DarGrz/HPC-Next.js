@@ -2,14 +2,16 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import SpecificationElement from "../ui/SpecificationElement";
 import ImagesRow from "../ui/ImagesRow";
-import { BsFillArrowUpCircleFill } from "react-icons";
 
 const PumpTable = (props) => {
   return (
     <>
-      <Container className="w-100">
+      <Container className="p-0">
         <ImagesRow pump={props.pump.image} pumpB={props.pumpB.image} />
-        <div className="text-center  fw-bolder text-uppercase bg-dark text-light pt-2 pb-2">
+        <div
+          className="text-center  fw-bolder text-uppercase  pt-2 pb-2"
+          style={{ backgroundColor: "#AFB3F7", color: "#fff" }}
+        >
           Specification
         </div>
         <SpecificationElement
@@ -39,7 +41,7 @@ const PumpTable = (props) => {
           pump={props.pump.type}
           pumpB={props.pumpB.type}
         />
-        <div className="row mt-2 border-bottom px-2">
+        <div className="row m-auto mt-2 border-bottom px-2">
           <div className="col ">
             {" "}
             {props.pump.width}x{props.pump.height}x{props.pump.depth}
@@ -65,7 +67,7 @@ const PumpTable = (props) => {
           weight={props.pump.weight}
           weightB={props.pumpB.weight}
         />
-        <div className="row mt-2 border-bottom px-2">
+        <div className="row m-auto  mt-2 border-bottom px-2">
           <div className="col ">
             {props.pump.phase}F | {props.pump.voltage}(V) | {props.pump.cycle}
             (Hz)

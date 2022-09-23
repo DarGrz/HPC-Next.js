@@ -20,11 +20,16 @@ const SelectPumps = (props) => {
   };
 
   const Products = props.products;
+  const banerColor = {
+    backgroundColor: "#92BCEA",
+    padding: "15px",
+    color: "#fff",
+  };
 
   return (
     <>
       <Baner />
-      <Container>
+      <Container style={banerColor}>
         <div className="text-center mb-3 fw-bold text-uppercase">
           Compare heat pumps!
         </div>

@@ -12,14 +12,14 @@ const img3 =
 const ItemCards = () => {
   return (
     <Container>
-      <div className="row">
+      <div className="row mt-5">
         <div className="col">
           <ItemCard image={img1} />
         </div>
-        <div className="col m-auto">
+        <div className="col ">
           <ItemCard image={img2} />
         </div>
-        <div className="col m-auto">
+        <div className="col ">
           <ItemCard image={img3} />
         </div>
       </div>
