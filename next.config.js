@@ -10,6 +10,7 @@ const nextConfig = {
       "img.freepik.com",
       "app.zymetric.pl",
       "www.technika-grzewcza-sklep.pl",
+      "wodexo.pl",
     ],
   },
 };

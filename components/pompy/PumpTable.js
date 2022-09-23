@@ -32,7 +32,7 @@ const PumpTable = (props) => {
           pump={props.pump.power}
           pumpB={props.pumpB.power}
           arrow={props.pump.power}
-          arrowB={props.pump.power}
+          arrowB={props.pumpB.power}
         />
         <SpecificationElement
           name={"Type"}
@@ -62,6 +62,8 @@ const PumpTable = (props) => {
           name={"Weight (kg)"}
           pump={props.pump.weight}
           pumpB={props.pumpB.weight}
+          weight={props.pump.weight}
+          weightB={props.pumpB.weight}
         />
         <div className="row mt-2 border-bottom px-2">
           <div className="col ">
