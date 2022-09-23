@@ -42,7 +42,7 @@ const PumpTable = (props) => {
           pumpB={props.pumpB.type}
         />
         <div className="row m-auto mt-2 border-bottom px-2">
-          <div className="col ">
+          <div className="col">
             {" "}
             {props.pump.width}x{props.pump.height}x{props.pump.depth}
           </div>

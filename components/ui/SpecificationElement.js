@@ -55,8 +55,8 @@ const SpecificationElement = (props) => {
   return (
     <div className="row  border-bottom px-2 m-auto ">
       <div
-        className="col m-auto"
         style={{ display: "flex", alignItems: "center" }}
+        className="col m-auto fs-md-1"
       >
         {props.pump}{" "}
         <div
@@ -73,7 +73,7 @@ const SpecificationElement = (props) => {
         {props.name}
       </div>
       <div
-        className="col"
+        className="col fs-sm-6"
         style={{ display: "flex", alignItems: "center", justifyContent: "end" }}
       >
         <div

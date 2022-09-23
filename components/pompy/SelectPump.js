@@ -23,7 +23,6 @@ const SelectPumps = (props) => {
   const banerColor = {
     backgroundColor: "#92BCEA",
     padding: "15px",
-    color: "#fff",
   };
 
   return (
@@ -31,7 +30,7 @@ const SelectPumps = (props) => {
       <Baner />
       <Container style={banerColor}>
         <div className="text-center mb-3 fw-bold text-uppercase">
-          Compare heat pumps!
+          <div style={{ color: "#fff" }}>Compare heat pumps!</div>
         </div>
         <div className="row align-items-center col d-md-flex flex-column flex-lg-row  m-auto ">
           <div className="col">
