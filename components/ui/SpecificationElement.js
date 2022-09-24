@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BsFillArrowUpCircleFill } from "react-icons/bs";
 import { BsFillArrowDownCircleFill } from "react-icons/bs";
 
@@ -7,17 +7,29 @@ const red = { color: "red", fontSize: "16px" };
 const green = { color: "green", fontSize: "16px" };
 
 const SpecificationElement = (props) => {
-  console.log(props.arrow);
-  console.log(props.arrowB);
-
+  useEffect(() => {}, [trigger, triggerB]);
   //arrow show trigger
   let trigger = props.arrow;
   let triggerB = props.arrowB;
+  let weight;
+  let better;
 
   if (trigger > triggerB) {
     trigger = false;
   } else {
     trigger = true;
+  }
+
+  console.log(props.weight, props.weightB);
+
+  if (props.weight > props.weightB) {
+    better = "a is better";
+    !!weight;
+  } else if (props.weight < props.weightB) {
+    better = "b is better";
+    weight;
+  } else {
+    better = "equal";
   }
 
   // Power arrow
@@ -37,16 +49,17 @@ const SpecificationElement = (props) => {
     ));
 
   // Weight arrow
-  const weightArrow =
-    props.weightB &&
-    (!trigger ? (
+  let weightArrow =
+    props.weight &&
+    (!weight ? (
       <BsFillArrowUpCircleFill style={green} />
     ) : (
       <BsFillArrowDownCircleFill style={red} />
     ));
+
   const weightArrowB =
     props.weightB &&
-    (trigger ? (
+    (weight ? (
       <BsFillArrowUpCircleFill style={green} />
     ) : (
       <BsFillArrowDownCircleFill style={red} />
