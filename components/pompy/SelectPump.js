@@ -27,14 +27,15 @@ const SelectPumps = (props) => {
   return (
     <>
       <Baner />
-      <Container style={banerColor} className="mb-3 mt-3 py-4">
-        <div className="text-center mb-3 fw-bold text-uppercase">
+      <Container style={banerColor} className="py-3 my-3">
+        <div className="text-center mb-3 fw-bold text-uppercase ">
           <div style={{ color: "#fff" }}>Compare heat pumps!</div>
         </div>
         <div className="row align-items-center col d-md-flex flex-column flex-lg-row  m-auto ">
           <div className="col">
             <Select
-              sonChange={(e) => {
+              className="mb-2 mb-lg-0"
+              onChange={(e) => {
                 onSelectPump(e);
               }}
               instanceId="long-value-select"

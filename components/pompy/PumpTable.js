@@ -9,11 +9,8 @@ const PumpTable = (props) => {
       <Container className="p-0">
         <ImagesRow pump={props.pump.image} pumpB={props.pumpB.image} />
         <div
-          className="text-center  fw-bolder text-uppercase  pt-3 pb-3 mb-3 mt-3"
-          style={{
-            backgroundColor: "#212529",
-            color: "#fff",
-          }}
+          className="text-center  fw-bolder text-uppercase  py-3 mt-3"
+          style={{ backgroundColor: "#212529", color: "#fff" }}
         >
           Specification
         </div>

@@ -73,8 +73,13 @@ const SpecificationElement = (props) => {
         {props.name}
       </div>
       <div
-        className="col fs-sm-6"
-        style={{ display: "flex", alignItems: "center", justifyContent: "end" }}
+        className="col fs-sm-6 text-right"
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "end",
+          textAlign: "right",
+        }}
       >
         <div
           style={{

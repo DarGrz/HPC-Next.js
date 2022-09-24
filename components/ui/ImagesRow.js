@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const ImagesRow = (props) => {
   return (
-    <div className="row" style={{ margin: "auto" }}>
+    <div className="row" style={{ margin: "auto", padding: "0 10px" }}>
       <div
         className="col d-flex justify-content-center p-0"
         style={{
