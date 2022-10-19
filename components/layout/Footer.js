@@ -14,7 +14,7 @@ const Footer = () => {
               Bootstrap
             </svg>
           </Link>
-          <span className="text-muted">© 2022 HPC Dariusz Grzegorczy</span>
+          <span className="text-muted">© 2022 HPC Dariusz Grzegorczyk</span>
         </div>
 
         <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
