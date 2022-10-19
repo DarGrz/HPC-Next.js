@@ -1,6 +1,6 @@
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import Link from "next/Link";
+import Link from "next/link";
 
 function ItemCard(props) {
   return (
