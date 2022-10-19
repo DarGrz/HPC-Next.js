@@ -3,34 +3,49 @@ import React from "react";
 import ItemCard from "./ItemCard";
 
 const img1 =
-  "https://img.freepik.com/premium-photo/close-up-hand-technician-using-manifold-gauge-filling-air-conditioners_101448-2962.jpg?size=626&ext=jpg&ga=GA1.2.594929802.1662414653";
+  "https://www.buderus.com/landing/media/country-pool/keyvisual_buderus_1_1600x900.webp";
 const img2 =
-  "https://img.freepik.com/premium-photo/pouring-splash-oil-car-motor-vegetable-olive-isolated-white-background_53089-134.jpg?size=626&ext=jpg&ga=GA1.2.594929802.1662414653";
+  "https://www.buderus.com/ocsmedia/optimized/1600x900/o372716v296_skv_powietrzne_1.webp";
 const img3 =
   "https://img.freepik.com/premium-photo/technician-using-measuring-tool-checking-electric-outdoor-air-compressor_101448-3842.jpg?size=626&ext=jpg&ga=GA1.2.594929802.1662414653";
 
-const titleCard1 = "Logatherm";
+const titleCard1 = "What is Buderus";
 const textCard1 =
-  "Efektywne rozwiązanie dla domów jednorodzinnych, zarówno w nowym budownictwie, jak i przy rozbudowie istniejącego systemu grzewczego. Jest ona już przystosowana do połączenia z systemem fotowoltaicznym, dzięki czemu może być zasilana samodzielnie wytworzonym prądem.";
+  "Buderus is an important part of the Bosch Group. Our company tradition, which stretches back over 290 years, has successfully led us into the 21st century. We started as heating installers and developed into system providers, meaning that our work excels in a number of ways – offering innovative technology, outstanding service and first-rate designs.";
 const titleCard2 = "Logatherm";
 const textCard2 =
-  "System grzewczy dla tych, którzy chcą chronić środowisko i obniżyć koszty energii. Wysokowydajna pompa ciepła może pracować ze zbiornikiem c.w.u. lub bez, jest wyjątkowo cicha i bardzo kompaktowa, nadaje się nawet do małych pomieszczeń.";
-const titleCard3 = "Aplikacja MyBuderus";
+  "A heating system for those who want to protect the environment and reduce energy costs. The high-efficiency heat pump can work with a domestic hot water tank. or without, it is extremely quiet and very compact, even suitable for small rooms.";
+const titleCard3 = "MyBuderus App";
 const textCard3 =
-  "Aplikacja pozwala wygodnie łączyć się z systemem grzewczym z dowolnego miejsca i w dowolnym czasie, umożliwia także zdalny nadzór Specjaliście. Jest to niezwykłe ułatwienie zwiększające wygodę i usprawniające prace konserwacyjne systemu grzewczego.";
+  "The application allows you to conveniently connect with the heating system from anywhere and at any time, it also allows remote supervision by a specialist. It is a remarkable facilitation, increasing the comfort and streamlining the maintenance works of the heating system.";
 
 const ItemCards = () => {
   return (
     <Container>
       <div className="row mt-5">
         <div className="col">
-          <ItemCard image={img1} title={titleCard1} text={textCard1} />
+          <ItemCard
+            image={img1}
+            title={titleCard1}
+            text={textCard1}
+            extLink="https://www.buderus.com/en/"
+          />
         </div>
         <div className="col ">
-          <ItemCard image={img2} title={titleCard2} text={textCard2} />
+          <ItemCard
+            image={img2}
+            title={titleCard2}
+            text={textCard2}
+            extLink="https://www.buderus.com/pl/pl/ocs/budynki-mieszkalne/powietrzne-746309-c/"
+          />
         </div>
         <div className="col ">
-          <ItemCard image={img3} title={titleCard3} text={textCard3} />
+          <ItemCard
+            image={img3}
+            title={titleCard3}
+            text={textCard3}
+            extLink="https://play.google.com/store/apps/details?id=com.bosch.tt.buderus&hl=en_IN&gl=US"
+          />
         </div>
       </div>
     </Container>

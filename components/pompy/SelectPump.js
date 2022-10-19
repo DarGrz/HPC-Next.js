@@ -1,17 +1,26 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Container } from "react-bootstrap";
 import Select from "react-select";
 import PumpTable from "./PumpTable";
 import Baner from "../layout/Baner";
 
 const SelectPumps = (props) => {
+  const Products = props.products;
+  console.log(Products);
+
   const [pump, setPump] = useState("");
   const [pumpB, setPumpB] = useState("");
 
+  useEffect(() => {
+    setPump(Products.filter((d) => d.id == "632b651282a8ccfbedf5752f")[0]);
+    setPumpB(Products.filter((d) => d.id == "632b6d0882a8ccfbedf57531")[0]);
+  }, []);
+
   const onSelectPump = (e) => {
     const selectedId = e.id;
-    const selectedPump = Products.filter((d) => d.id == selectedId)[0];
+    const selectedPump = Products.filter((d) => d.id == selectedPump)[0];
     setPump(selectedPump);
+    console.log(selectedId);
   };
   const onSelectPumpB = (e) => {
     const selectedId = e.id;
@@ -19,7 +28,6 @@ const SelectPumps = (props) => {
     setPumpB(selectedPump);
   };
 
-  const Products = props.products;
   const banerColor = {
     backgroundColor: "#212529",
   };
