@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import React from "react";
-import AddPumpForm from "../../components/pompy/AddPumpForm";
+import AddPumpForm from "../../components/pumps/AddPumpForm";
 
 const AddPumpPage = () => {
   const router = useRouter();

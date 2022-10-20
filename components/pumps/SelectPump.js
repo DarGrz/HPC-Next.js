@@ -17,7 +17,6 @@ const SelectPumps = (props) => {
     const selectedId = e.id;
     const selectedPump = Products.filter((d) => d.id == selectedId)[0];
     setPump(selectedPump);
-    console.log(selectedId);
   };
   const onSelectPumpB = (e) => {
     const selectedId = e.id;
