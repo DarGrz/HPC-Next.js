@@ -27,9 +27,6 @@ const MainNavigation = () => {
             <Nav.Link className="text-success fw-bold" href="/new-pump">
               Add new pump
             </Nav.Link>
-            {/* <NavDropdown title="Admin" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/new-pump">Add pump</NavDropdown.Item>
-            </NavDropdown> */}
           </Nav>
         </Navbar.Collapse>
       </Container>

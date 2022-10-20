@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { MongoClient } from "mongodb";
-import SelectPumps from "../components/pompy/SelectPump";
+import SelectPumps from "../components/pumps/SelectPump";
 import styles from "../styles/Home.module.css";
 import ItemCards from "../components/ui/ItemCards";
 

@@ -5,9 +5,6 @@ import PumpTable from "./PumpTable";
 import Baner from "../layout/Baner";
 
 const SelectPumps = (props) => {
-  const Products = props.products;
-  console.log(Products);
-
   const [pump, setPump] = useState("");
   const [pumpB, setPumpB] = useState("");
 
@@ -18,7 +15,7 @@ const SelectPumps = (props) => {
 
   const onSelectPump = (e) => {
     const selectedId = e.id;
-    const selectedPump = Products.filter((d) => d.id == selectedPump)[0];
+    const selectedPump = Products.filter((d) => d.id == selectedId)[0];
     setPump(selectedPump);
     console.log(selectedId);
   };
@@ -27,6 +24,8 @@ const SelectPumps = (props) => {
     const selectedPump = Products.filter((d) => d.id == selectedId)[0];
     setPumpB(selectedPump);
   };
+
+  const Products = props.products;
 
   const banerColor = {
     backgroundColor: "#212529",
