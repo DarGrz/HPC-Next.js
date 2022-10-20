@@ -24,7 +24,6 @@ const MainNavigation = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/about">About</Nav.Link>
             <Nav.Link className="text-success fw-bold" href="/new-pump">
               Add new pump
             </Nav.Link>
