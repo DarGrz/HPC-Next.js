@@ -10,15 +10,18 @@ function ItemCard(props) {
         src={props.image}
         style={{ height: "150px", objectFit: "cover" }}
       />
-      <Card.Body>
+      <Card.Body style={{ height: "325px" }}>
         <Card.Title>{props.title}</Card.Title>
         <Card.Text>{props.text}</Card.Text>
-        <Button variant="primary">
-          <Link href={props.extLink}>
-            <a style={{ color: "white", textDecoration: "none" }}>More...</a>
-          </Link>
-        </Button>
       </Card.Body>
+      <Button
+        variant="primary"
+        style={{ width: "30%", marginLeft: "1em", marginBottom: "1em" }}
+      >
+        <Link href={props.extLink}>
+          <a style={{ color: "white", textDecoration: "none" }}>More...</a>
+        </Link>
+      </Button>
     </Card>
   );
 }
