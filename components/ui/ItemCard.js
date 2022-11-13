@@ -4,7 +4,7 @@ import Link from "next/link";
 
 function ItemCard(props) {
   return (
-    <Card style={{ width: "18rem" }} className="m-auto">
+    <Card style={{ width: "18rem", marginBottom: "1rem" }} className="mx-auto ">
       <Card.Img
         variant="top"
         src={props.image}

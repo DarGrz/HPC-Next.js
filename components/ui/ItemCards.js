@@ -22,7 +22,7 @@ const textCard3 =
 const ItemCards = () => {
   return (
     <Container>
-      <div className="row mt-5">
+      <div className="row mt-5 itemCards">
         <div className="col">
           <ItemCard
             image={img1}

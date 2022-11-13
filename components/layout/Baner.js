@@ -7,18 +7,20 @@ const banerImage =
 
 const Baner = () => {
   return (
-    <Container className="p-0 mb-3">
+    <Container className="p-0">
       <div
         style={{
           width: "100%",
           height: "30vh",
           position: "relative",
+          display: "grid",
+          placeItems: "center",
         }}
       >
         <Image
           layout="fill"
           objectFit="cover"
-          className="w-100 mt-3"
+          className="w-100"
           src={banerImage}
           alt="baner"
           placeholder="blur"
