@@ -4,7 +4,15 @@ import Link from "next/link";
 
 function ItemCard(props) {
   return (
-    <Card style={{ width: "20rem", marginBottom: "1rem" }} className="mx-auto ">
+    <Card
+      style={{
+        width: "100%",
+        minWidth: "20rem",
+        overflow: "hidden",
+        marginBottom: "1rem",
+      }}
+      className="mx-auto "
+    >
       <Card.Img
         variant="top"
         src={props.image}

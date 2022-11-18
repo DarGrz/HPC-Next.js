@@ -33,7 +33,7 @@ const SelectPumps = (props) => {
   return (
     <>
       <Baner />
-      <Container style={banerColor} className="py-3 my-md-3 my-sm-1 ">
+      <Container style={banerColor} className="py-3 my-md-3 my-sm-3 ">
         <div className="text-center mb-3 fw-bold text-uppercase ">
           <div style={{ color: "#fff" }}>Compare heat pumps!</div>
         </div>
