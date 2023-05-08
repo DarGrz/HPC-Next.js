@@ -17,5 +17,5 @@
 <li>Next.js</li>
 </ul>
 <br>
-<h3>Github Pages Link</h3>
+<h3>Vercel Link</h3>
 <span>https://hpcnextjs-h2b52xhhv-dargrz.vercel.app/</span>
