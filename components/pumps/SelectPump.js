@@ -9,8 +9,8 @@ const SelectPumps = (props) => {
   const [pumpB, setPumpB] = useState("");
 
   useEffect(() => {
-    setPump(Products.filter((d) => d.id == "632b651282a8ccfbedf5752f")[0]);
-    setPumpB(Products.filter((d) => d.id == "648b28f661bc232e9645939c")[0]);
+    setPump(Products.filter((d) => d.id == "648b28f661bc232e9645939c")[0]);
+    setPumpB(Products.filter((d) => d.id == "632b651282a8ccfbedf5752f")[0]);
   }, []);
 
   const onSelectPump = (e) => {
