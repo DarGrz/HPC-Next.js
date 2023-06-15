@@ -3,7 +3,7 @@ import React from "react";
 import ItemCard from "./ItemCard";
 
 const img1 =
-  "https://www.vaillant.com/media-master/global-media/vaillant/product-pictures/arotherm-plus-2019/b2c/hp19-309009-03-1587831-format-16-9@392@desktop.jpg";
+  "https://www.vaillant.com/media-master/global-media/layout/logos/old/vaillant-logo-272x72-1888261.png";
 const img2 =
   "https://www.vaillant.com/media-master/global-media/vaillant/product-pictures/arotherm-plus-2019/b2c/hp19-309009-03-1587831-format-16-9@392@desktop.jpg";
 const img3 =

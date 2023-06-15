@@ -12,6 +12,7 @@ const nextConfig = {
       "www.technika-grzewcza-sklep.pl",
       "wodexo.pl",
       "vaillant.com",
+      "vaillant.pl",
     ],
   },
 };

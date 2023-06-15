@@ -10,7 +10,7 @@ const SelectPumps = (props) => {
 
   useEffect(() => {
     setPump(Products.filter((d) => d.id == "632b651282a8ccfbedf5752f")[0]);
-    setPumpB(Products.filter((d) => d.id == "632b6d0882a8ccfbedf57531")[0]);
+    setPumpB(Products.filter((d) => d.id == "648b28f661bc232e9645939c")[0]);
   }, []);
 
   const onSelectPump = (e) => {
