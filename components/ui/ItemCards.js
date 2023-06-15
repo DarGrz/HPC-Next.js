@@ -3,21 +3,21 @@ import React from "react";
 import ItemCard from "./ItemCard";
 
 const img1 =
-  "https://www.viessmann.pl/content/dam/vi-brands/DE/Logo/viessmann-logo.png/_jcr_content/renditions/original.image_file.328.180.file/viessmann-logo.png";
+  "https://www.vaillant.com/media-master/global-media/vaillant/product-pictures/arotherm-plus-2019/b2c/hp19-309009-03-1587831-format-16-9@392@desktop.jpg";
 const img2 =
-  "https://www.viessmann.pl/content/dam/vi-brands/PL/Produkty/Vitocal_100-S/Vitocal-100-S_XL.jpg/_jcr_content/renditions/original.image_file.1440.450.file/Vitocal-100-S_XL.jpg";
+  "https://www.vaillant.com/media-master/global-media/vaillant/product-pictures/arotherm-plus-2019/b2c/hp19-309009-03-1587831-format-16-9@392@desktop.jpg";
 const img3 =
-  "https://www.viessmann.pl/content/dam/vi-brands/DE/Produkte/Waermepumpen/Vitocal_200-S/vitocal-200-s-xl.jpg/_jcr_content/renditions/original.image_file.1440.450.file/vitocal-200-s-xl.jpg";
+  "https://www.vaillant.com/media-master/global-media/vaillant/product-pictures/emotion/hp12-1328-01-44489-format-16-9@392@desktop.jpg";
 
-const titleCard1 = "What is Viessmann";
+const titleCard1 = "What is Vaillant";
 const textCard1 =
-  "The Viessmann Group is a leading international manufacturer of heating, industrial and cooling systems. Viessmann's comprehensive range offers individual solutions with efficient systems from 1.5 to 120,000 kilowatts for all areas of application and all energy carriers.";
-const titleCard2 = "The Vitocal 100-S heat pump in split version";
+  "More than 140 years have passed since Johann Vaillant founded his master-craftsman installation business in a small half-timbered house in Remscheid/Germany. What began in 1874 is now a company with more than 12,000 employees and a globally leading provider of sustainable and responsible system solutions and services for heating cooling and hot water.";
+const titleCard2 = "Air-to-water heat pump system aroTHERM plus";
 const textCard2 =
-  "It has an energy efficiency class of A++/A+ and is cost-effective. It boasts low running costs thanks to its high COP (according to EN 14511: 4.4 to 4.8 - air 7°C/water 35°C). The reversible version enables both heating and cooling (AC variant). Equipped with the user-friendly Vitotronic control unit featuring a text and graphic display, it offers easy operation. It can be mounted either standing or hanging and has the capability to utilize electricity from a photovoltaic installation.";
-const titleCard3 = "VITOCAL 200-S";
+  "Environmentally friendly and future-proof, thanks to the most cutting-edge heat pump technology with natural refrigerant, reducing your carbon footprint. Natural refrigerant for the respect of the environment. Hot water up to 70 °C.";
+const titleCard3 = "aroTHERM 5, 8, 11 and 15 kW";
 const textCard3 =
-  "Reliable, compact and more environmentally friendly than ever before – the new generation of Viessmann heat pumps uses ambient heat for heating and cooling extremely efficiently. With a flow temperature of up to 60 °C, the Vitocal 200-S heat pump is the ideal solution for energy-efficient new construction. Its high energy efficiency, convenient application operation, sustainable operation and attractive design are impressive.";
+  "The most compact heating and acclimatization renewable system, with a power output of 5, 8 kW (single phase), 11 and 15 kW (tri phase). Reversible system for heating, dhw generation, and also active cooling. System consisting of a heat pump to be installed outdoors and a hydraulic unit indoor, ideal for the efficient enlargement of an existing heating system to become a hybrid system.";
 
 const ItemCards = () => {
   return (
@@ -28,7 +28,7 @@ const ItemCards = () => {
             image={img1}
             title={titleCard1}
             text={textCard1}
-            extLink="https://www.viessmann.family/"
+            extLink="https://www.vaillant.com/home/"
           />
         </div>
         <div className="col ">
@@ -36,7 +36,7 @@ const ItemCards = () => {
             image={img2}
             title={titleCard2}
             text={textCard2}
-            extLink="https://www.viessmann.pl/pl/budynki-mieszkalne/pompy-ciepla/pompy-ciepla-powietrzewoda-w-wersji-split/vitocal-100s.html"
+            extLink="https://www.vaillant.com/home/products/air-to-water-heat-pump-system-arotherm-plus-12096.html"
           />
         </div>
         <div className="col ">
@@ -44,7 +44,7 @@ const ItemCards = () => {
             image={img3}
             title={titleCard3}
             text={textCard3}
-            extLink="https://www.viessmann.pl/pl/budynki-mieszkalne/pompy-ciepla/pompy-ciepla-powietrzewoda-w-wersji-split/vitocal-200-s-r32.html"
+            extLink="https://www.vaillant.com/home/products/arotherm-5-8-11-and-15-kw-11025.html"
           />
         </div>
       </div>
