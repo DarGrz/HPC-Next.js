@@ -11,6 +11,7 @@ const nextConfig = {
       "app.zymetric.pl",
       "www.technika-grzewcza-sklep.pl",
       "wodexo.pl",
+      "viessmann.pl",
     ],
   },
 };
