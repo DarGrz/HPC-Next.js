@@ -33,8 +33,8 @@ const PumpTable = (props) => {
           name={"Power (kW)"}
           pump={props.pump.power}
           pumpB={props.pumpB.power}
-          arrow={props.pump.power}
-          arrowB={props.pumpB.power}
+          // arrow={props.pump.power}
+          // arrowB={props.pumpB.power}
         />
         <SpecificationElement
           name={"Type"}
