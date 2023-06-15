@@ -13,6 +13,9 @@ const nextConfig = {
       "wodexo.pl",
       "vaillant.com",
       "vaillant.pl",
+      "https://www.vaillant.pl/",
+      "www.vaillant.pl",
+      "image.ceneostatic.pl",
     ],
   },
 };
